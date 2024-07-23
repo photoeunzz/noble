@@ -1,0 +1,233 @@
+*{
+    padding:0; 
+    margin: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+body{
+    /* 맑은고딕/13px/#666 */
+    font-family: 맑은고딕;
+    font-size: 13px;
+    color:#666;
+}
+
+/* top s */
+
+.top{
+    text-align: center;
+    background-color: rgb(255, 225, 144);
+    width:100%;
+    height:120px;
+    padding:40px 0;
+    box-sizing: border-box;
+}
+
+/* top e */
+
+/* header s */
+
+.header{
+    width:100%;
+    height:100px;
+    background-color: rgb(0, 0, 0);
+    margin:0 auto;
+}
+
+.gnb>ul{
+    display: flex;
+    justify-content: center;
+    width:1180px;
+    margin:0 auto;
+}
+
+.gnb>ul>li>a{
+    display: block;
+    color:rgb(255, 225, 144);
+    font-size: 15px;
+    box-sizing: border-box;
+    width:200px;
+    height:100px;
+    text-align: center;
+    padding:40px 0;
+}
+
+.gnb>ul>li>a:hover{
+    background: url(../images/gnb_on.png) no-repeat
+    top 0 center;
+    background-position: top -100px;
+}
+
+
+/* header e */
+
+/* main s */
+
+.main{
+    width:1904px;
+    margin:0 auto;
+}
+
+/* main e */
+
+/* s1 s */
+
+.s1{
+    width:1180px;
+    margin:50px auto;
+    text-align: center;
+    height:600px;
+}
+
+
+.s1_title p{
+    font-size:16px;
+}
+
+.s1_contents ul{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin:100px 0;
+    padding:0 120px;
+}
+
+.s1_contents ul li{
+    width:300px;
+}
+
+.s1_text{
+    padding:20px 0;
+    border:1px solid #d4d4d4;
+    border-top:0;
+    height:60px;
+}
+
+.s1_img{
+    width:300px;
+    overflow: hidden;
+    height:269px;
+}
+
+.s1_img img{
+    width:100%;
+}
+
+/* s1 e */
+
+/* s2 s */
+
+.s2_wrap{
+    background: url(../images/s1.jpg) no-repeat top center;
+    margin:0 auto;
+    height:850px;
+    text-align: center; 
+    animation: slide 25s infinite linear;
+}
+
+@keyframes slide{
+    0%{
+        background: url(../images/s1.jpg) no-repeat top center;
+    }
+    20%{
+        background: url(../images/s2.jpg) no-repeat top center;
+    }
+    40%{
+        background: url(../images/s3.jpg) no-repeat top center;
+    }
+    60%{
+        background: url(../images/s4.jpg) no-repeat top center;
+    }
+    80%{
+        background: url(../images/s5.jpg) no-repeat top center;
+    }
+    100%{
+        background: url(../images/s1.jpg) no-repeat top center;
+    }
+}
+
+.s2_text{
+    width:1180px;
+    margin:0 auto;
+    color:#fff;  
+    padding:350px 0;
+}
+
+hr{
+    margin:20px 0;
+}
+
+.s2_text p{
+    font-size:17px;
+    line-height: 30px;
+}
+
+/* s2 e */
+
+/* s3 s */
+
+.s3{
+    width:1180px;
+    margin:100px auto;
+
+}
+
+/* s3 e */
+
+/* movie s */
+
+.movie_wrap{
+    width:100%;
+    background:url(../images/bg.jpg);
+    margin:0 auto;
+    padding:200px 0 100px 0;
+}
+
+.movie{
+    width:1180px;
+    margin:0 auto;
+}
+
+/* movie e */
+
+/* footer s */
+
+.footer_wrap{
+    width:100%;
+    height:110px; 
+    background-color: rgb(73, 73, 73);
+    box-sizing: border-box;
+}
+
+.footer{
+    width:1180px;
+    margin:0 auto;
+    display: flex;
+    padding:30px 0;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.f_text{
+    text-align: right;
+    position:absolute;
+    top:30px;
+    right:0;
+    color:#ffffff8f;
+}
+
+/* footer e */
+
+
+/* 공통 꾸미기 */
+
+h2{
+    font-size:25px;
+}
